@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitRoutine privacy policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    background: #ffffff;
+    color: #1a1d24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1015; color: #edeef2; }
+    code { background: #1b1e27; }
+    .card { background: #14161d; border-color: #2a2e3a; }
+    th { border-color: #2a2e3a; }
+    td { border-color: #2a2e3a; }
+  }
+  h1 { font-size: 1.85rem; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .lede { color: #767c8a; margin-top: 0; }
+  .card { background: #f7f8fa; border: 1px solid #e2e5ea; border-radius: 12px; padding: 1rem 1.25rem; }
+  code { background: #f0f1f5; border-radius: 4px; font-size: 0.9em; padding: 0.15em 0.4em; }
+  table { border-collapse: collapse; margin-top: 0.75rem; width: 100%; }
+  th, td { border-bottom: 1px solid #e2e5ea; padding: 0.55rem 0.5rem; text-align: left; vertical-align: top; }
+  th { font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  ol, ul { padding-left: 1.35rem; }
+  li { margin: 0.4rem 0; }
+  footer { color: #767c8a; font-size: 0.85rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+
+<h1>FitRoutine privacy policy</h1>
+<p class="lede">FitRoutine (<code>com.ksil.fitroutine</code>) &middot; Last updated 15 August 2026</p>
+
+<p>
+  FitRoutine is a workout tracker that works offline. You can use the whole app without an account.
+  This policy explains what is stored on your device, what is sent to our servers if you choose to
+  sign in, and what is never collected. For the rules on using the app itself, including exercise
+  and injury disclaimers, see the <a href="terms-of-use.html">terms of use</a>.
+</p>
+
+<h2>Using FitRoutine without an account</h2>
+<div class="card">
+  <p style="margin:0">
+    If you never sign in, your data never leaves your device. Workouts, plans, settings, and history
+    are stored locally and are not transmitted to us or to anyone else.
+  </p>
+</div>
+
+<h2>What we store if you create an account</h2>
+<p>
+  Signing in is optional. It exists so your workouts can be backed up and restored on another
+  device. If you sign in, the following is stored on our servers:
+</p>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Why</th>
+  </tr>
+  <tr>
+    <td>Email address, and display name if you provide one</td>
+    <td>To identify your account and let you sign in and recover access</td>
+  </tr>
+  <tr>
+    <td>Workout plans, categories, and scheduled rest days</td>
+    <td>So your routine is restored when you reinstall or use another device</td>
+  </tr>
+  <tr>
+    <td>Workout sessions, completed sets, weights, reps, and session duration</td>
+    <td>So your training history and progress are restored</td>
+  </tr>
+  <tr>
+    <td>Exercise history and per-exercise defaults</td>
+    <td>To show your previous performance for each exercise</td>
+  </tr>
+  <tr>
+    <td>App settings, including your step and calorie goals</td>
+    <td>So your preferences carry across devices</td>
+  </tr>
+</table>
+
+<h2>Health and fitness data</h2>
+<p>
+  On iOS, FitRoutine can display step count, heart rate, and active calories from Apple Health.
+  This is off by default and only turned on if you enable it and grant permission in the system
+  prompt.
+</p>
+<div class="card">
+  <p style="margin:0">
+    <strong>Apple Health readings are never uploaded.</strong> They are read on demand, shown on
+    screen, and are not written to our servers or saved into your synced account data. Your step and
+    calorie <em>goals</em> are settings you choose, and those do sync, but the measurements
+    themselves never leave your device.
+  </p>
+</div>
+<p>
+  You can revoke access at any time in the iPhone Health app or in iOS Settings, or by turning
+  health metrics off inside FitRoutine.
+</p>
+
+<h2>Signing in with Google or Apple</h2>
+<p>
+  If you sign in with Google or Apple, we receive only your basic account identifier and email
+  address so an account can be created for you. We do not receive your password. Apple provides your
+  name only on the very first sign-in; if it is provided, it is stored as your display name. If you
+  use Apple's Hide My Email, we only ever see the relay address Apple generates.
+</p>
+
+<h2>Diagnostics and anonymous usage data</h2>
+<p>
+  So that crashes and data-loss bugs can be found without waiting for someone to report them,
+  FitRoutine sends two kinds of anonymous diagnostic information. Both are covered by a single
+  switch in the app under <strong>More &rarr; Privacy &rarr; Share anonymous usage data</strong>.
+  Turning it off stops both immediately.
+</p>
+<ul>
+  <li>
+    <strong>Crash reports</strong>, through <strong>Sentry</strong>. A report contains the error, the
+    place in our code it came from, and the app and device version. It does not include your name,
+    email, account identifier, or any health reading.
+  </li>
+  <li>
+    <strong>Anonymous app activity</strong>, through <strong>PostHog</strong>. This is a fixed list of
+    events: the app being opened, a workout being started or completed, a set being logged, and four
+    failure events — a failed save, a failed sync, settings falling back to defaults, and a screen
+    failing to open. Each event carries only counts, durations, the weekday of the plan, and the
+    workout category.
+  </li>
+</ul>
+<p>
+  Neither service is told who you are. We never send your account identifier, email address, or
+  display name to either of them, so the activity recorded is not linked to your account. The set of
+  fields an event is allowed to contain is fixed in the app's source code and anything outside it is
+  dropped before it is sent. Nothing you type &mdash; exercise names you add, notes, goals &mdash; and
+  no Apple Health reading is ever included. There is no advertising identifier, no cross-app tracking,
+  and no session or screen recording.
+</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell or rent your data.</li>
+  <li>We do not share your data with advertisers, and there is no advertising in the app.</li>
+  <li>We do not use advertising or attribution SDKs, and the diagnostics described above are not used for advertising.</li>
+  <li>We do not build advertising profiles or track you across other apps and websites.</li>
+  <li>We do not log authentication tokens or health information.</li>
+</ul>
+
+<h2>Who processes your data</h2>
+<p>
+  Account and sync data is stored with <strong>Supabase</strong>, which provides our database and
+  authentication hosting. Data is transmitted over encrypted connections (HTTPS/TLS) and access is
+  restricted so that each account can only read and write its own rows. Your sign-in session is kept
+  in the secure storage provided by your operating system (iOS Keychain / Android Keystore).
+</p>
+<p>
+  Anonymous diagnostics are processed by <strong>Sentry</strong> (crash reports) and
+  <strong>PostHog</strong> (app activity), only while the switch described above is on.
+</p>
+
+<h2>Your choices and rights</h2>
+<ul>
+  <li><strong>Use the app without an account.</strong> Nothing is uploaded except the anonymous diagnostics described above, which you can turn off.</li>
+  <li><strong>Turn off anonymous usage data.</strong> More &rarr; Privacy &rarr; Share anonymous usage data. Crash reports and app-activity events both stop.</li>
+  <li><strong>Sign out.</strong> The account's cached data on that device is cleared or partitioned so another person using the device cannot read it.</li>
+  <li><strong>Delete your account.</strong> Available in the app under More &rarr; profile &rarr; Delete account and data, and also by email. See the <a href="delete-account.html">account deletion page</a>.</li>
+  <li><strong>Access or correct your data.</strong> Email us and we will help.</li>
+</ul>
+<p>
+  Depending on where you live, you may have additional rights over your personal data, such as
+  access, correction, deletion, and portability. Contact us to exercise them.
+</p>
+
+<h2>Security</h2>
+<p>
+  Data in transit is encrypted (HTTPS/TLS). Account data is access-controlled so each account can
+  only read and write its own rows, and your sign-in session is kept in your operating system's
+  secure storage (iOS Keychain / Android Keystore) rather than in plain text. No method of storage
+  or transmission is 100% secure, so we cannot guarantee absolute security, but we do not store
+  passwords ourselves &mdash; authentication is handled by Supabase, Google, or Apple.
+</p>
+
+<h2>Data retention</h2>
+<p>
+  Account data is kept until you delete your account. Deletion removes your records from the live
+  database immediately. Encrypted infrastructure backups may hold residual copies for up to 30 days
+  before being overwritten.
+</p>
+
+<h2 id="children">Children</h2>
+<p>
+  FitRoutine is not directed at children under 13, and we do not knowingly collect their personal
+  data. If you believe a child has created an account, contact us and we will delete it.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes materially, the updated version will be published here with a new date, and
+  the change will be noted in the app release notes.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions or requests: <strong>fitroutine.app.team@gmail.com</strong>
+</p>
+
+<footer>
+  FitRoutine &middot; Last updated 15 August 2026
+</footer>
+
+</body>
+</html>
